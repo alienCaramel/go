@@ -1,0 +1,31 @@
+.panels{
+  border-color:  #bdc3c7 !important;
+}
+.panels:hover{
+  border: 2px solid #16a085 !important;
+}
+
+.head-panel{
+  background-color: white !important;
+  color : #8e44ad !important;
+  border-color: #bdc3c7 !important;
+}
+
+.footer-panel{
+  background-color: white !important;
+  border-color: #bdc3c7 !important;
+}
+
+.btn-panel{
+  background-color: transparent;
+  width:35px;
+  height:35px;
+  color:#34495e;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+.btn-panel:hover{
+  background-color: #ecf0f1 !important;
+  color:#34495e;
+}

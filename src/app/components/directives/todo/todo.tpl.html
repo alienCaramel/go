@@ -1,0 +1,21 @@
+<div class="panel panel-primary panels">
+  <div class="panel-heading head-panel"><label>{{vm.todo.nombre}}</label>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" ng-click="vm.eliminar({id:vm.todo.id})"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="azulito">Categoria: {{vm.todo.categoria}}</p>
+
+      </div>
+      <div class="col-md-6">
+        <p class="azulito">Fecha inicio: {{vm.todo.fecha}}</p>
+        <p class="azulito">Fecha final: {{vm.todo.fechaFinal}}</p>  
+      </div>
+    </div>
+  </div>
+   <div class="panel-footer footer-panel">
+     <button class="btn btn-panel"><i class="fa fa-pencil-square-o"></i></button>
+     <button class="btn btn-panel" ng-click="vm.completado({id:vm.todo.id})"><i class="fa fa-check"></i></button>
+   </div>
+</div>
