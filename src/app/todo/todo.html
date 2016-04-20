@@ -1,0 +1,67 @@
+<div class="top-section-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="dau" ng-controller="modal as modal">
+          <button type="button" class="btn btn-custom top" ng-click="modal.abrir()">Nuevo Todo</button>
+          <script type="text/ng-template" id="/myModalContent.html">
+              <div class="modal-header pop-head">
+                  <h3 class="modal-title">Nuevo todo</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <div class="form">
+                    <div class="form-group">
+                     <label class="azulito">Nombre:</label>
+                     <input type="text" class="form-control input-primary" ng-model="vm.nombre">
+                    </div>
+                    <div class="form-group">
+                     <label class="azulito">Categoría:</label>
+                     <select
+                       class="form-control input-primary"
+                       ng-options="categoria.nombre as categoria.nombre for categoria in vm.categorias track by categoria.id"
+                       ng-model="vm.miCat"></select>
+                    </div>
+                    <div class="form-group">
+                     <label class="azulito">Fecha final:</label>
+                     <ng-datepicker format="DD-MM-YYYY" ng-model="vm.finalDate">
+                      </ng-datepicker>
+                    </div>
+                    <input type="text" ngmodel="modalCtrl.contact._id" ng-hide="true"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-fail" type="button" ng-click="vm.close()">Cancelar</button>
+                <button class="btn btn-exito" type="button" ng-click="vm.save()">Guardar</button>
+            </div>
+          </script>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="inner-addon left-addon">
+          <i style="color:white;" class="fa fa-search"></i>
+          <input type="text" class="form-control  input-custom top" ng-model="buscar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Por hacer</h3>
+          <div ng-repeat="todo in vm.todos | filter:buscar | orderBy:'nombre'">
+            <div class="col-md-4">
+              <div ng-if="todo.estado == 1">
+                <todo completado="vm.completado(id)" eliminar="vm.delete(id)" bind="todo"></todo>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

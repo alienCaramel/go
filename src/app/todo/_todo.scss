@@ -1,0 +1,139 @@
+.top-section-2{
+  background-color: #9b59b6;
+  height: 6em;
+}
+//-------Buttons-------------------
+.btn-custom{
+  border-radius: 6px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn-custom:hover{
+  color: #9b59b6;
+  background-color: white;
+  border: 2px solid #9b59b6;
+}
+
+.btn-custom:focus{
+  color:white;
+  background-color: #9b59b6;
+  outline: none !important;
+}
+
+
+.btn-exito{
+  border-radius: 6px;
+  color: #1abc9c;
+  background-color: transparent;
+  border: 2px solid #1abc9c;
+}
+.btn-exito:focus{
+  color:white;
+  background-color: #1abc9c;
+  outline: none !important;
+}
+.btn-exito:hover{
+  border-radius: 6px;
+  color: white;
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+}
+
+.btn-fail{
+  border-radius: 6px;
+  color: #8e44ad;
+  background-color: transparent;
+  border: 2px solid #8e44ad;
+}
+.btn-fail:focus{
+  color:white;
+  background-color: #8e44ad;
+  outline: none !important;
+}
+.btn-fail:hover{
+  border-radius: 6px;
+  color: white;
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+}
+
+
+.top{
+  margin-top: 1.5em;
+}
+
+//---------------------------------
+
+//-----------Inputs----------------
+.input-custom{
+  background-color: transparent;
+  border-radius: 0px !important;
+  border: transparent;
+  border-bottom: 2px solid white;
+  color:white;
+  -webkit-box-shadow: none;
+}
+
+.form-control{
+  box-shadow: none !important;
+}
+
+.input-custom:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border-bottom: 1px solid white;
+}
+
+.input-primary{
+  background-color: transparent;
+  border-radius: 0px !important;
+  border: transparent;
+  border-bottom: 2px solid #9b59b6;
+  color:#34495e;
+  -webkit-box-shadow: none;
+}
+
+.input-primary:focus{
+  background-color: transparent;
+  border-radius: 0px !important;
+  border: transparent;
+  border-bottom: 1px solid #9b59b6;
+  color:#34495e;
+  -webkit-box-shadow: none;
+}
+//----------------------------------
+
+//-----------Icon inputs-------------------
+.inner-addon {
+    position: relative;
+}
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+//--------------------------------------------
+
+//------------POP UP-------------------------
+.pop-head{
+  background-color: #1abc9c !important;
+  color: white !important;
+  border-bottom: 6px;
+  border-radius: 4px;
+}
+
+//-------------------------------------------

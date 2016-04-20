@@ -2,6 +2,7 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css';
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
@@ -11,7 +12,14 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
  */
 // bower:scss
 // endbower
+@font-face{
+  font-family: 'lobster';
+  src:url('fonts/lobster/lob.otf');
+}
 
+.lobster{
+  font-family:'lobster';
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -20,11 +28,18 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 }
 
 .thumbnail {
-  height: 200px;
-
   img.pull-right {
     width: 50px;
   }
+}
+.azulito{
+  color: #34495e;
+}
+.turquesa{
+  color: #1abc9c;
+}
+.gris{
+  color: #7f8c8d;
 }
 
 /**
@@ -32,4 +47,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
  *  all your sass files automatically
  */
 // injector
+@import 'main/main.scss';
+@import 'todo/todo.scss';
+@import 'components/directives/todo/todoPanel.scss';
+@import 'miPerfil/miPerfil.scss';
 // endinjector
