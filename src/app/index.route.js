@@ -8,7 +8,9 @@
 
   /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider) {
+
     $stateProvider
+
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
@@ -31,6 +33,12 @@
         url: 'mi-perfil',
         templateUrl: 'app/miPerfil/miPerfil.html',
         controller: 'MiPerfilController',
+        controllerAs: 'vm'
+      })
+      .state('home.categoria', {
+        url: 'categoria',
+        templateUrl: 'app/categoria/categoria.html',
+        controller: 'CategoriaController',
         controllerAs: 'vm'
       });
 

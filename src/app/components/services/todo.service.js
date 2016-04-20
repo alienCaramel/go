@@ -13,7 +13,14 @@
     ];
 
     this.getTodos = function(){
-      return todos;
+      var pendientes =  [];
+      for(var i = 0 ; i < todos.length; i++){
+        if(todos[i].estado == 1){
+          var todo = todos[i];
+          pendientes.push(todo);
+        }
+      }
+      return pendientes;
     }
 
     this.addTodo = function(ptodo){
@@ -28,6 +35,17 @@
             todos.splice(i, 1);
          }
       }
+    }
+
+    this.getTerminados = function(){
+      var terminados =  [];
+      for(var i = 0 ; i < todos.length; i++){
+        if(todos[i].estado == 0){
+          var todo = todos[i];
+          terminados.push(todo);
+        }
+      }
+      return terminados;
     }
 
     this.completado = function(pid){

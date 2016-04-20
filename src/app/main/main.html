@@ -8,13 +8,16 @@
                 </a>
             </li>
             <li>
-                <a ui-sref="home.miPerfil"><i class="fa fa-moon-o" aria-hidden="true"></i> <strong>Mi Perfil</strong></a>
+                <a ui-sref="home.miPerfil"><i class="fa fa-moon-o fa-lg" aria-hidden="true"></i>  <strong class="regular">Mi Perfil</strong></a>
             </li>
             <li>
-                <a ui-sref="home.todo"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Por Hacer</strong></a>
+                <a ui-sref="home.todo"><i class="fa fa-eye fa-lg" aria-hidden="true"></i>  <strong class="regular">Por Hacer</strong></a>
             </li>
             <li>
-                <a ui-sref="home.terminados"><i class="fa fa-thumbs-up" aria-hidden="true"></i> <strong>Terminados</strong></a>
+                <a ui-sref="home.terminados"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i> <strong class="regular">Terminados</strong></a>
+            </li>
+            <li>
+                <a ui-sref="home.categoria"><i class="fa fa-diamond fa-lg" aria-hidden="true"></i> <strong class="regular">Categoría</strong></a>
             </li>
         </ul>
     </div>
@@ -22,7 +25,9 @@
     <div class="top-section">
       <a href="#menu-toggle" class="btn btn-bars" id="menu-toggle"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
     </div>
+
     <div ui-view></div>
+
     <script>
       $("#menu-toggle").click(function(e) {
         e.preventDefault();

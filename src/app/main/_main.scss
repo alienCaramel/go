@@ -26,6 +26,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
+    background-color: #8e44ad;
     background: url('./img/ga5.jpg') no-repeat fixed;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -141,4 +142,9 @@
 
 .size{
   font-size: 35px;
+}
+
+.regular{
+  font-family: 'regular';
+  font-size: 17px;
 }
