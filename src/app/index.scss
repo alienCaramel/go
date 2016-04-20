@@ -17,9 +17,34 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   src:url('fonts/lobster/lob.otf');
 }
 
+@font-face{
+  font-family: 'principal';
+  src:url('fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face{
+  font-family: 'secundaria';
+  src:url('fonts/roboto/Roboto-LightItalic.ttf');
+}
+
+@font-face{
+  font-family: 'regular';
+  src:url('fonts/roboto/Roboto-Regular.ttf');
+}
+
+body{
+  font-family: 'principal';
+  font-size: 14px;
+}
+.secundaria{
+  font-family: 'secundaria';
+  text-align: center;
+  color:#7f8c8d;
+}
 .lobster{
   font-family:'lobster';
 }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -39,7 +64,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   color: #1abc9c;
 }
 .gris{
-  color: #7f8c8d;
+  color:#7f8c8d;
 }
 
 /**

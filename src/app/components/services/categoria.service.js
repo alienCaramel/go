@@ -22,5 +22,6 @@
          categorias.push(pcategoria);
       }
     }
+    
   }
 })();

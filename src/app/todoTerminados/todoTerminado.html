@@ -1,15 +1,23 @@
+<div class="top-section-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner-addon left-addon">
+          <i style="color:white;" class="fa fa-search"></i>
+          <input type="text" class="form-control  input-custom top" ng-model="buscar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="page-content-wrapper">
     <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <input type="text" class="form-control" ng-model="buscar">
-          </div>
       <div class="row">
         <div class="col-md-12">
-          <h3>Terminados</h3>
+          <h3 class="gris">Terminados</h3>
           <div ng-repeat="todo in vm.todos | filter:buscar | orderBy:'nombre'">
             <div class="col-md-4">
-              <div ng-if="todo.estado == 0">
+              <div>
                 <todo completado="vm.completado(id)" eliminar="vm.delete(id)" bind="todo"></todo>
               </div>
             </div>
